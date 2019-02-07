@@ -51,9 +51,9 @@ def get_layerwise_filter_histograms(input_read_folder, filter_number):
     print(labels)
     # print(full_result)
     joypy.joyplot(full_result, labels=True, range_style='all',
-                  grid="y", linewidth=1, legend=True, figsize=(10, 3),
+                  grid="y", linewidth=1, legend=True, figsize=(6, 3),
                   title="Layer-wise activation/feature map at " + str(filter_number) + "th filter",
-                  colormap=cm.autumn_r, fade=True)
+                  colormap=cm.autumn_r, fade=True, bins=200)
     # , hist="True", bins=50
     plt.savefig(os.path.join("results", "layerwise_activations_filter_" + str(filter_number) + ".jpg"))
 
@@ -94,8 +94,8 @@ def get_weights_histograms(input_read_folder, layer_num):
 
 
 if __name__ == '__main__':
-    filter_num = 10
-    get_layerwise_filter_histograms(os.path.join("results", "layer_filter"), filter_num)
+    for filter_num in range(0, 10, 5):
+        get_layerwise_filter_histograms(os.path.join("results", "layer_filter"), filter_num)
 
     for layer in range(1, 6):
         get_weights_histograms(os.path.join("results", "weights"), layer)
