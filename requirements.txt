@@ -1,0 +1,9 @@
+numpy==1.16.0
+pandas==0.24.0
+joypy==0.1.10
+torch==1.0.0
+matplotlib==3.0.2
+opencv_python==4.0.0.21
+torchvision==0.2.1
+Pillow==5.4.1
+tensorboardX==1.6
