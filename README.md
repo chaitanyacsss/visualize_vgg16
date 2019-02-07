@@ -22,7 +22,7 @@ refer [requirements.txt](requirements.txt)
 
 * The feature map at layer 1 and filter 0 on an [example image](images/snake.jpg) looks 
 
-![Guided backprop at layer 1 and filter 0](layer_filter/snake_layer0_filter0_Guided_BP_color.jpg)
+![Guided backprop at layer 1 and filter 0](results/layer_filter/snake_layer0_filter0_Guided_BP_color.jpg)
 
 * Here the histograms produced were layerwise, to compare how a filter is activated across different layers.
 
