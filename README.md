@@ -20,13 +20,17 @@ refer [requirements.txt](requirements.txt)
 
 2) For Visualizing activations/features, I used the [guided backprop method](https://github.com/utkuozbulak/pytorch-cnn-visualizations#convolutional-neural-network-filter-visualization) [2].
 
-* The feature map at layer 1 and filter 0 on an [example image]() looks 
+* The feature map at layer 1 and filter 0 on an [example image](images/snake.jpg) looks 
 
-![Guided backprop at layer 1 and filter 0](snake_layer0_filter0_Guided_BP_color.jpg)
+![Guided backprop at layer 1 and filter 0](layer_filter/snake_layer0_filter0_Guided_BP_color.jpg)
 
 * Here the histograms produced were layerwise, to compare how a filter is activated across different layers.
 
 ![Guided backprop histogram at filter 0](results/layerwise_activations_filter_0.jpg) 
+
+3) Also tried [deep dream](https://github.com/utkuozbulak/pytorch-cnn-visualizations/blob/master/README.md#deep-dream) on an image, which looks very interesting!
+
+![Deep Dream](results/deepdream/ddream_-3_f63_iter250.jpg)
 
 ### References ###
 
